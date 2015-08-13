@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>courtneylee_assignment5_pg3</title>
+
+
+<script type="text/javascript">
+function moveObjectBy(objectID,deltaX,deltaY) {
+	var object = document.getElementById(objectID);
+	if (object.offsetLeft != null) {
+		var plusLeft = object.offsetLeft;
+		var plusTop = object.offsetTop;
+		object.style.left = deltaX + plusLeft +'px';
+		object.style.top = deltaY + plusTop + 'px';
+	}
+}
+</script>
+<style type="text/css" media="screen">
+body { 
+	font-size:20px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	color: #000000;
+	background-color:#666;
+	margin: 8px;
+}
+#narwhals1 {
+	position: absolute;
+	top: 80px;
+	left: 20px
+}
+</style>
+</head>
+<body>
+<a 
+	onmouseover="moveObjectBy('narwhals1',75,100);" 
+	onmouseout="moveObjectBy('narwhals1',-25,-55);" 
+	href="javascript:void('')">The Girl and her Narwhal.</a>
+<div id="narwhals1">
+<img src="narwhals1.jpg" height="300" width="250" alt="The Girl ans the Narwhal" />
+</div>
+<p>Back to the<a href="courtneylee_assignment5_pg2.html"> second page</a></p>
+</body>
+</html>

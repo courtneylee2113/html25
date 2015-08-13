@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+    <title>courtneylee_assignment5_pg1</title>
+	
+    <link href="asg01.css" title="default" type="text/css" rel="stylesheet" media="screen" lang="en" />
+
+<style type="text/css" media="screen">
+
+body{
+font-family:"Arial Black", Gadget, sans-serif;
+font-size:18px;
+color:#333;
+background-color:#CCC; 
+margin:2px;
+padding-left:6em; }
+</style>
+
+
+<script type="text/javascript">
+function findBrowserHeight() {
+	if (window.outerHeight != null)
+		return window.outerHeight;
+	return null;
+}
+
+function findBrowserWidth() {
+	if (window.outerWidth != null)
+		return window.outerWidth;
+	return null;
+}
+</script>
+
+</head>
+<body onresize="self.location.reload()">
+<div class="h_mnu_01">
+
+
+<h1><br/><br/>Lesson 5: Discovering the Environment</h1>
+<script type="text/javascript">
+var screenHeight = screen.height;
+var screenWidth = screen.width;
+
+var liveScreenHeight = screen.availHeight;
+var liveScreenWidth = screen.availWidth;
+
+document.writeln('Your total screen height is ' + screenHeight + 'px <br><br>');
+document.writeln('Your total screen width is ' + screenWidth + 'px <br><br>');
+document.writeln('Your live screen height is ' + liveScreenHeight + 'px <br><br>');
+document.writeln('Your live screen width is ' + liveScreenWidth + 'px <br><br>');
+</script>
+
+<script type="text/javascript">
+browserHeight = findBrowserHeight() ;
+browserWidth =  findBrowserWidth();
+
+if (browserWidth!= null) {
+document.writeln('Your total browser width is ' + browserWidth + 'px <br><br>'); }
+else {document.writeln ('The browser window\'s width can not be determined.'); }
+
+if (browserHeight!= null) {
+document.writeln('Your total browser height is ' + browserHeight + 'px <br><br>'); }
+else {document.writeln ('The browser window\'s height can not be determined.<br><br>'); }
+
+</script>
+
+</body>
+</html>
